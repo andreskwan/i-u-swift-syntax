@@ -7,16 +7,18 @@ import Foundation
 class LightSwitch {
     
     var on: Bool = true
+    var dimmer: Float = 3.14
 }
 
 var livingRoomSwitch = LightSwitch()
 livingRoomSwitch.on
+livingRoomSwitch.dimmer
 //: ### Example 2: Strings and Characters
 var dollarSign: Character = "$"
 var myFirstSwiftString: String = "mo' money"
 var mySecondSwiftString: String = "mo' problems"
-var concatenatedString:String = myFirstSwiftString + ", " + mySecondSwiftString
-
+var concatenatedString = myFirstSwiftString + ", " + mySecondSwiftString
+concatenatedString.dynamicType
 //: ### Stay tuned for more on Optionals and Tuples in the upcoming lessons!
 
 //: # Operators
@@ -95,7 +97,7 @@ hungry || thereIsPie ? println("Let's eat!") : println("Let's wait.")
 let sandwichPrice = 5.0
 var tax = true
 var lunchPrice = sandwichPrice + (tax ? 0.50 : 0)
-
+println(lunchPrice)
 //: ### Extra Example - Comparison operators
 let birthYear = 1984
 if birthYear <= 1989 {
@@ -105,4 +107,4 @@ else {
     println("I think that Salt n' Peppa are essential seasonings.")
 }
 
-
+ 
